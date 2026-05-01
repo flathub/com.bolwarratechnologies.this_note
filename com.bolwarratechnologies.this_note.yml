@@ -28,8 +28,8 @@ modules:
           /app/share/metainfo/com.bolwarratechnologies.this_note.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/Perszus/this-note-linux/releases/download/v1.0.6/this_note_linux_v1.0.6.tar.xz
-        sha256: fdde54b3e955c7f9380235b78d94c2df14ddfd1fbf129837d827eaad3496374e
+        url: https://github.com/Perszus/this-note-linux/releases/download/v1.0.7/this_note_linux_v1.0.7.tar.xz
+        sha256: dbd468de70c53a7a6a2741fba8379da2a3dee819881387038b0f2cbd07561ac0
       - type: script
         dest-filename: this_note_wrapper.sh
         commands:
