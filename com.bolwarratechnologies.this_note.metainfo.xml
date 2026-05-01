@@ -3,7 +3,7 @@
   <id>com.bolwarratechnologies.this_note</id>
 
   <name>This Note</name>
-  <summary>Private, encrypted note-taking</summary>
+  <summary>Private notes that stay offline</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary=https://bolwarratechnologies.com/license</project_license>
