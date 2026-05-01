@@ -26,10 +26,12 @@ modules:
           /app/share/icons/hicolor/512x512/apps/com.bolwarratechnologies.this_note.png
       - install -Dm644 com.bolwarratechnologies.this_note.metainfo.xml
           /app/share/metainfo/com.bolwarratechnologies.this_note.metainfo.xml
+      - install -Dm644 LICENSE
+          /app/share/licenses/com.bolwarratechnologies.this_note/LICENSE
     sources:
       - type: archive
-        url: https://github.com/Perszus/this-note-linux/releases/download/v1.0.8/this_note_linux_v1.0.8.tar.xz
-        sha256: 41753d6018f1465cfc49ba53c2359b0d074a47271838f86a28d7a631628c87ad
+        url: https://github.com/Perszus/this-note-linux/releases/download/v1.0.9/this_note_linux_v1.0.9.tar.xz
+        sha256: b54395e1f1252a982af3a7d925d4165d39ea7df4fe7d03e1856e6bffe11737b6
       - type: script
         dest-filename: this_note_wrapper.sh
         commands:

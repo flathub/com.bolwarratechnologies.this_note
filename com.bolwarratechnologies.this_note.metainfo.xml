@@ -3,7 +3,7 @@
   <id>com.bolwarratechnologies.this_note</id>
 
   <name>This Note</name>
-  <summary>Private notes that stay offline</summary>
+  <summary>Offline private notes</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary=https://bolwarratechnologies.com/license</project_license>
@@ -14,20 +14,16 @@
 
   <description>
     <p>
-      This Note is a private, offline-only note-taking app. Your notes never leave your
-      device — no account, no cloud sync, no network access of any kind.
+      Write freely knowing your notes never leave your device. No account required,
+      no internet connection, no data sent anywhere — ever.
     </p>
     <ul>
-      <li>AES-256-GCM encryption with per-note password protection</li>
+      <li>Per-note password protection keeps sensitive notes locked</li>
       <li>Organize with nested folders, tags, and note-to-note links</li>
       <li>Mind-map your ideas visually with the built-in Synapse canvas</li>
       <li>Writing stats: word count, reading time, and tracked writing time</li>
       <li>12 themes, rich text formatting, and a clean three-panel layout</li>
     </ul>
-    <p>
-      The master encryption key is stored in the OS secret service (GNOME Keyring /
-      libsecret). No data is written outside your local app directory.
-    </p>
   </description>
 
   <launchable type="desktop-id">com.bolwarratechnologies.this_note.desktop</launchable>
