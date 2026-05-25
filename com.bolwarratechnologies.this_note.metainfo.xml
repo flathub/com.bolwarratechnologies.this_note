@@ -59,6 +59,25 @@
   <url type="homepage">https://bolwarratechnologies.com</url>
 
   <releases>
+    <release version="1.2.0" date="2026-05-08">
+      <description>
+        <p>Synapse polish, multi-select, bug fixes, and a proper About page.</p>
+        <ul>
+          <li>Synapse: drag-select multiple cells, then drag, recolor, or delete them together</li>
+          <li>Synapse: connect from any of four sides of a cell; larger easier-to-grab ports</li>
+          <li>Synapse: modern L-shaped corner handles instead of square dots; new color palette</li>
+          <li>Pan the canvas with middle mouse or two-finger trackpad; right-click empty space to add a node</li>
+          <li>Color &amp; font pickers now apply live with no Apply button, plus a Reset-to-default option</li>
+          <li>Emoji picker opens with a focused search field — start typing to filter instantly</li>
+          <li>To-do list: per-item notes, drag to reorder, delete down to the last item</li>
+          <li>Trackpad scrolling now works in the note tree and editor (fixes Lenovo X1 Carbon report)</li>
+          <li>Drag-and-drop now lands at the correct position, including the top of subfolders</li>
+          <li>Manual reorder of notes &amp; folders now persists across restarts</li>
+          <li>Smoother scrollbar behaviour and cursor auto-scroll when typing past the viewport</li>
+          <li>Full About page in Settings with platform links and contact</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.0" date="2026-04-23">
       <description>
         <p>Premium Themes — introducing animated themes.</p>
