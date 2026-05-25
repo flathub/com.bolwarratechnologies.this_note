@@ -31,7 +31,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/Perszus/this-note-linux/releases/download/v1.2.0/this_note_linux_v1.2.0.tar.xz
-        sha256: 27f3e26c51ba6f729c0acc6133a2a0a90a3e12a034c7f991e8d23650c2c85821
+        sha256: 1780712e143a343e5a61932b19a565d2458bd69f0cfd036b99f815e5a2cb8eb6
       - type: script
         dest-filename: this_note_wrapper.sh
         commands:
