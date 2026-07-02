@@ -30,8 +30,8 @@ modules:
           /app/share/licenses/com.bolwarratechnologies.this_note/LICENSE
     sources:
       - type: archive
-        url: https://github.com/Perszus/this-note-linux/releases/download/v1.2.0/this_note_linux_v1.2.0.tar.xz
-        sha256: 1780712e143a343e5a61932b19a565d2458bd69f0cfd036b99f815e5a2cb8eb6
+        url: https://github.com/Perszus/this-note-linux/releases/download/v2.0.0/this_note_linux_v2.0.0.tar.xz
+        sha256: 5df9233ba63aaeffd0d0fc630af40723afa811fa700467d997dd017c976186b0
       - type: script
         dest-filename: this_note_wrapper.sh
         commands:
