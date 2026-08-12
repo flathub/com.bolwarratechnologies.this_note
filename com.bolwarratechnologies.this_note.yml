@@ -20,14 +20,10 @@ modules:
       - cp -ra data/. /app/share/this_note/
       - ln -s /app/share/this_note /app/lib/this_note/data
       - install -Dm755 this_note_wrapper.sh /app/bin/this_note
-      - install -Dm644 com.bolwarratechnologies.this_note.desktop
-          /app/share/applications/com.bolwarratechnologies.this_note.desktop
-      - install -Dm644 com.bolwarratechnologies.this_note.png
-          /app/share/icons/hicolor/512x512/apps/com.bolwarratechnologies.this_note.png
-      - install -Dm644 com.bolwarratechnologies.this_note.metainfo.xml
-          /app/share/metainfo/com.bolwarratechnologies.this_note.metainfo.xml
-      - install -Dm644 LICENSE
-          /app/share/licenses/com.bolwarratechnologies.this_note/LICENSE
+      - install -Dm644 ${FLATPAK_ID}.desktop -t /app/share/applications/
+      - install -Dm644 ${FLATPAK_ID}.png -t /app/share/icons/hicolor/512x512/apps/
+      - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 LICENSE -t /app/share/licenses/${FLATPAK_ID}/this_note
     sources:
       - type: archive
         url: https://github.com/Perszus/this-note-linux/releases/download/v2.0.0/this_note_linux_v2.0.0.tar.xz
