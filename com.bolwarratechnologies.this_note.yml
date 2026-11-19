@@ -9,6 +9,8 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --device=dri
+  # No network permission: MCP Connection (off until the user turns it on) is reached by AI apps through the bridge
+  # below (flatpak run --command=this-note-mcp com.bolwarratechnologies.this_note), over a socket inside the sandbox.
 
 modules:
   - name: this_note_linux
@@ -20,6 +22,7 @@ modules:
       - cp -ra data/. /app/share/this_note/
       - ln -s /app/share/this_note /app/lib/this_note/data
       - install -Dm755 this_note_wrapper.sh /app/bin/this_note
+      - install -Dm755 this-note-mcp /app/bin/this-note-mcp
       - install -Dm644 com.bolwarratechnologies.this_note.desktop
           /app/share/applications/com.bolwarratechnologies.this_note.desktop
       - install -Dm644 com.bolwarratechnologies.this_note.png
@@ -30,8 +33,8 @@ modules:
           /app/share/licenses/com.bolwarratechnologies.this_note/LICENSE
     sources:
       - type: archive
-        url: https://github.com/Perszus/this-note-linux/releases/download/v2.0.0/this_note_linux_v2.0.0.tar.xz
-        sha256: 5df9233ba63aaeffd0d0fc630af40723afa811fa700467d997dd017c976186b0
+        url: https://github.com/Perszus/this-note-linux/releases/download/v2.1.0/this_note_linux_v2.1.0.tar.xz
+        sha256: 5b32360bec99804b5e207a6b87a168518d0705030f28f91fabdfbb3fd1cd8ab4
       - type: script
         dest-filename: this_note_wrapper.sh
         commands:
